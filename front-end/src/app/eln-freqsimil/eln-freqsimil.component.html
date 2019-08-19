@@ -1,0 +1,26 @@
+<div class="main">
+    <h2>Electronic Lab Notebook</h2>
+    <div class="input">
+      <textarea [(ngModel)]="inputData.entryText"></textarea>
+      <br><br>
+      <table>
+            <tr>
+                <td><label>Keyword:</label></td>
+                <td><input class="keyword" [(ngModel)]="inputData.keyword" /></td>
+            </tr>
+      </table>
+    </div>
+    <br><button (click)="execute()">Display statistics on keyword inserted</button><br><br>
+    <div class="output">
+        <table>
+            <tr>
+                <td><label>Frequency in text:</label></td>
+                <td><input [(ngModel)]="outputData.frequency" readonly/></td>
+            </tr>
+            <tr>
+                <td><label>Similar words:</label></td>
+                <td><input [(ngModel)]="outputData.similarWords" readonly/></td>
+            </tr>
+        </table>
+      </div>
+  </div>

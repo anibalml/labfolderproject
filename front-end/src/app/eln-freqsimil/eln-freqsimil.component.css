@@ -1,0 +1,14 @@
+textarea {
+    resize: none;
+    width: 300px;
+    height: 300px;
+}
+
+input.keyword {
+    width: 230px;
+}
+
+div.main {
+    position: absolute;
+    left: 50px;
+}
